@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E50A3F521ECBF7860049C73B /* heart_shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F511ECBF7860049C73B /* heart_shoot.wav */; };
+		E50A3F541ECBF7AD0049C73B /* explosion_effect.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F531ECBF7AD0049C73B /* explosion_effect.wav */; };
+		E50A3F561ECBFB820049C73B /* CreditScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F551ECBFB820049C73B /* CreditScene.sks */; };
+		E50A3F581ECBFB910049C73B /* CreditScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50A3F571ECBFB910049C73B /* CreditScene.swift */; };
+		E50A3F5A1ECC03570049C73B /* lose_life.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F591ECC03570049C73B /* lose_life.wav */; };
+		E50A3F5E1ECC14850049C73B /* battle_music.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F5B1ECC14850049C73B /* battle_music.wav */; };
+		E50A3F5F1ECC14850049C73B /* game_win.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F5C1ECC14850049C73B /* game_win.wav */; };
+		E50A3F631ECC1A5A0049C73B /* menu_music.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F621ECC1A5A0049C73B /* menu_music.wav */; };
+		E50A3F661ECC1C8F0049C73B /* credit_music.wav in Resources */ = {isa = PBXBuildFile; fileRef = E50A3F641ECC1C8F0049C73B /* credit_music.wav */; };
+		E5A1B92F1ECCAD3900C56E0A /* select_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A1B92E1ECCAD3900C56E0A /* select_sound.wav */; };
+		E5A1B9311ECCB52700C56E0A /* lose_music.wav in Resources */ = {isa = PBXBuildFile; fileRef = E5A1B9301ECCB52700C56E0A /* lose_music.wav */; };
+		E5E1C6D61ECA5D04000154E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C6D51ECA5D04000154E3 /* AppDelegate.swift */; };
+		E5E1C6D81ECA5D04000154E3 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C6D71ECA5D04000154E3 /* GameScene.sks */; };
+		E5E1C6DA1ECA5D04000154E3 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C6D91ECA5D04000154E3 /* Actions.sks */; };
+		E5E1C6DC1ECA5D04000154E3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C6DB1ECA5D04000154E3 /* GameScene.swift */; };
+		E5E1C6DE1ECA5D04000154E3 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C6DD1ECA5D04000154E3 /* GameViewController.swift */; };
+		E5E1C6E11ECA5D04000154E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C6DF1ECA5D04000154E3 /* Main.storyboard */; };
+		E5E1C6E31ECA5D04000154E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C6E21ECA5D04000154E3 /* Assets.xcassets */; };
+		E5E1C6E61ECA5D04000154E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C6E41ECA5D04000154E3 /* LaunchScreen.storyboard */; };
+		E5E1C6F11ECA5D04000154E3 /* RobotsVSZombiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C6F01ECA5D04000154E3 /* RobotsVSZombiesTests.swift */; };
+		E5E1C6FC1ECA5D04000154E3 /* RobotsVSZombiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C6FB1ECA5D04000154E3 /* RobotsVSZombiesUITests.swift */; };
+		E5E1C70C1ECAB61A000154E3 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C70B1ECAB61A000154E3 /* StartScene.sks */; };
+		E5E1C70E1ECAB654000154E3 /* LoseScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C70D1ECAB654000154E3 /* LoseScene.sks */; };
+		E5E1C7101ECAB664000154E3 /* WinScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C70F1ECAB664000154E3 /* WinScene.sks */; };
+		E5E1C7151ECABCB2000154E3 /* UnicaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C7141ECABCB2000154E3 /* UnicaOne-Regular.ttf */; };
+		E5E1C7171ECABD42000154E3 /* Percy Pixel.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C7161ECABD42000154E3 /* Percy Pixel.ttf */; };
+		E5E1C7191ECABDBF000154E3 /* Pixeleris.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5E1C7181ECABDBF000154E3 /* Pixeleris.ttf */; };
+		E5E1C71E1ECAC1DB000154E3 /* LoseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C71D1ECAC1DB000154E3 /* LoseScene.swift */; };
+		E5E1C7201ECAC202000154E3 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C71F1ECAC202000154E3 /* StartScene.swift */; };
+		E5E1C7221ECAC20B000154E3 /* WinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E1C7211ECAC20B000154E3 /* WinScene.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5E1C6ED1ECA5D04000154E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E1C6CA1ECA5D04000154E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E1C6D11ECA5D04000154E3;
+			remoteInfo = RobotsVSZombies;
+		};
+		E5E1C6F81ECA5D04000154E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5E1C6CA1ECA5D04000154E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5E1C6D11ECA5D04000154E3;
+			remoteInfo = RobotsVSZombies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E50A3F511ECBF7860049C73B /* heart_shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart_shoot.wav; sourceTree = "<group>"; };
+		E50A3F531ECBF7AD0049C73B /* explosion_effect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosion_effect.wav; sourceTree = "<group>"; };
+		E50A3F551ECBFB820049C73B /* CreditScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CreditScene.sks; sourceTree = "<group>"; };
+		E50A3F571ECBFB910049C73B /* CreditScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditScene.swift; sourceTree = "<group>"; };
+		E50A3F591ECC03570049C73B /* lose_life.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose_life.wav; sourceTree = "<group>"; };
+		E50A3F5B1ECC14850049C73B /* battle_music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = battle_music.wav; sourceTree = "<group>"; };
+		E50A3F5C1ECC14850049C73B /* game_win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = game_win.wav; sourceTree = "<group>"; };
+		E50A3F621ECC1A5A0049C73B /* menu_music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = menu_music.wav; sourceTree = "<group>"; };
+		E50A3F641ECC1C8F0049C73B /* credit_music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = credit_music.wav; sourceTree = "<group>"; };
+		E5A1B92E1ECCAD3900C56E0A /* select_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = select_sound.wav; sourceTree = "<group>"; };
+		E5A1B9301ECCB52700C56E0A /* lose_music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose_music.wav; sourceTree = "<group>"; };
+		E5E1C6D21ECA5D04000154E3 /* RobotsVSZombies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotsVSZombies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E1C6D51ECA5D04000154E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E5E1C6D71ECA5D04000154E3 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E5E1C6D91ECA5D04000154E3 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		E5E1C6DB1ECA5D04000154E3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E5E1C6DD1ECA5D04000154E3 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		E5E1C6E01ECA5D04000154E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5E1C6E21ECA5D04000154E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5E1C6E51ECA5D04000154E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5E1C6E71ECA5D04000154E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E1C6EC1ECA5D04000154E3 /* RobotsVSZombiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsVSZombiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E1C6F01ECA5D04000154E3 /* RobotsVSZombiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsVSZombiesTests.swift; sourceTree = "<group>"; };
+		E5E1C6F21ECA5D04000154E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E1C6F71ECA5D04000154E3 /* RobotsVSZombiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotsVSZombiesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5E1C6FB1ECA5D04000154E3 /* RobotsVSZombiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsVSZombiesUITests.swift; sourceTree = "<group>"; };
+		E5E1C6FD1ECA5D04000154E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5E1C70B1ECAB61A000154E3 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
+		E5E1C70D1ECAB654000154E3 /* LoseScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LoseScene.sks; sourceTree = "<group>"; };
+		E5E1C70F1ECAB664000154E3 /* WinScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = WinScene.sks; sourceTree = "<group>"; };
+		E5E1C7141ECABCB2000154E3 /* UnicaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "UnicaOne-Regular.ttf"; path = "../UnicaOne-Regular.ttf"; sourceTree = "<group>"; };
+		E5E1C7161ECABD42000154E3 /* Percy Pixel.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Percy Pixel.ttf"; path = "../Percy Pixel.ttf"; sourceTree = "<group>"; };
+		E5E1C7181ECABDBF000154E3 /* Pixeleris.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Pixeleris.ttf; path = ../Pixeleris.ttf; sourceTree = "<group>"; };
+		E5E1C71D1ECAC1DB000154E3 /* LoseScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoseScene.swift; sourceTree = "<group>"; };
+		E5E1C71F1ECAC202000154E3 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		E5E1C7211ECAC20B000154E3 /* WinScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinScene.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5E1C6CF1ECA5D04000154E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E1C6E91ECA5D04000154E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E1C6F41ECA5D04000154E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E50A3F611ECC148B0049C73B /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				E50A3F5B1ECC14850049C73B /* battle_music.wav */,
+				E50A3F5C1ECC14850049C73B /* game_win.wav */,
+				E50A3F621ECC1A5A0049C73B /* menu_music.wav */,
+				E50A3F641ECC1C8F0049C73B /* credit_music.wav */,
+				E5A1B9301ECCB52700C56E0A /* lose_music.wav */,
+			);
+			name = Songs;
+			sourceTree = "<group>";
+		};
+		E5769B2B1ECB63310013339F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E5A1B92E1ECCAD3900C56E0A /* select_sound.wav */,
+				E50A3F511ECBF7860049C73B /* heart_shoot.wav */,
+				E50A3F531ECBF7AD0049C73B /* explosion_effect.wav */,
+				E50A3F591ECC03570049C73B /* lose_life.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		E5E1C6C91ECA5D04000154E3 = {
+			isa = PBXGroup;
+			children = (
+				E5E1C6D41ECA5D04000154E3 /* RobotsVSZombies */,
+				E5E1C6EF1ECA5D04000154E3 /* RobotsVSZombiesTests */,
+				E5E1C6FA1ECA5D04000154E3 /* RobotsVSZombiesUITests */,
+				E5E1C6D31ECA5D04000154E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5E1C6D31ECA5D04000154E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1C6D21ECA5D04000154E3 /* RobotsVSZombies.app */,
+				E5E1C6EC1ECA5D04000154E3 /* RobotsVSZombiesTests.xctest */,
+				E5E1C6F71ECA5D04000154E3 /* RobotsVSZombiesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5E1C6D41ECA5D04000154E3 /* RobotsVSZombies */ = {
+			isa = PBXGroup;
+			children = (
+				E50A3F611ECC148B0049C73B /* Songs */,
+				E5769B2B1ECB63310013339F /* Sounds */,
+				E5E1C71A1ECABDC3000154E3 /* Fonts */,
+				E5E1C70A1ECAB5F4000154E3 /* Code */,
+				E5E1C7091ECAB5E6000154E3 /* Scenes */,
+				E5E1C6D51ECA5D04000154E3 /* AppDelegate.swift */,
+				E5E1C6D91ECA5D04000154E3 /* Actions.sks */,
+				E5E1C6DD1ECA5D04000154E3 /* GameViewController.swift */,
+				E5E1C6DF1ECA5D04000154E3 /* Main.storyboard */,
+				E5E1C6E21ECA5D04000154E3 /* Assets.xcassets */,
+				E5E1C6E41ECA5D04000154E3 /* LaunchScreen.storyboard */,
+				E5E1C6E71ECA5D04000154E3 /* Info.plist */,
+			);
+			path = RobotsVSZombies;
+			sourceTree = "<group>";
+		};
+		E5E1C6EF1ECA5D04000154E3 /* RobotsVSZombiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1C6F01ECA5D04000154E3 /* RobotsVSZombiesTests.swift */,
+				E5E1C6F21ECA5D04000154E3 /* Info.plist */,
+			);
+			path = RobotsVSZombiesTests;
+			sourceTree = "<group>";
+		};
+		E5E1C6FA1ECA5D04000154E3 /* RobotsVSZombiesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1C6FB1ECA5D04000154E3 /* RobotsVSZombiesUITests.swift */,
+				E5E1C6FD1ECA5D04000154E3 /* Info.plist */,
+			);
+			path = RobotsVSZombiesUITests;
+			sourceTree = "<group>";
+		};
+		E5E1C7091ECAB5E6000154E3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1C70B1ECAB61A000154E3 /* StartScene.sks */,
+				E5E1C6D71ECA5D04000154E3 /* GameScene.sks */,
+				E5E1C70D1ECAB654000154E3 /* LoseScene.sks */,
+				E5E1C70F1ECAB664000154E3 /* WinScene.sks */,
+				E50A3F551ECBFB820049C73B /* CreditScene.sks */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		E5E1C70A1ECAB5F4000154E3 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1C6DB1ECA5D04000154E3 /* GameScene.swift */,
+				E5E1C71F1ECAC202000154E3 /* StartScene.swift */,
+				E5E1C7211ECAC20B000154E3 /* WinScene.swift */,
+				E5E1C71D1ECAC1DB000154E3 /* LoseScene.swift */,
+				E50A3F571ECBFB910049C73B /* CreditScene.swift */,
+			);
+			name = Code;
+			sourceTree = "<group>";
+		};
+		E5E1C71A1ECABDC3000154E3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5E1C7181ECABDBF000154E3 /* Pixeleris.ttf */,
+				E5E1C7161ECABD42000154E3 /* Percy Pixel.ttf */,
+				E5E1C7141ECABCB2000154E3 /* UnicaOne-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5E1C6D11ECA5D04000154E3 /* RobotsVSZombies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E1C7001ECA5D04000154E3 /* Build configuration list for PBXNativeTarget "RobotsVSZombies" */;
+			buildPhases = (
+				E5E1C6CE1ECA5D04000154E3 /* Sources */,
+				E5E1C6CF1ECA5D04000154E3 /* Frameworks */,
+				E5E1C6D01ECA5D04000154E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotsVSZombies;
+			productName = RobotsVSZombies;
+			productReference = E5E1C6D21ECA5D04000154E3 /* RobotsVSZombies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5E1C6EB1ECA5D04000154E3 /* RobotsVSZombiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E1C7031ECA5D04000154E3 /* Build configuration list for PBXNativeTarget "RobotsVSZombiesTests" */;
+			buildPhases = (
+				E5E1C6E81ECA5D04000154E3 /* Sources */,
+				E5E1C6E91ECA5D04000154E3 /* Frameworks */,
+				E5E1C6EA1ECA5D04000154E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E1C6EE1ECA5D04000154E3 /* PBXTargetDependency */,
+			);
+			name = RobotsVSZombiesTests;
+			productName = RobotsVSZombiesTests;
+			productReference = E5E1C6EC1ECA5D04000154E3 /* RobotsVSZombiesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5E1C6F61ECA5D04000154E3 /* RobotsVSZombiesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E1C7061ECA5D04000154E3 /* Build configuration list for PBXNativeTarget "RobotsVSZombiesUITests" */;
+			buildPhases = (
+				E5E1C6F31ECA5D04000154E3 /* Sources */,
+				E5E1C6F41ECA5D04000154E3 /* Frameworks */,
+				E5E1C6F51ECA5D04000154E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5E1C6F91ECA5D04000154E3 /* PBXTargetDependency */,
+			);
+			name = RobotsVSZombiesUITests;
+			productName = RobotsVSZombiesUITests;
+			productReference = E5E1C6F71ECA5D04000154E3 /* RobotsVSZombiesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5E1C6CA1ECA5D04000154E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tong Zhang";
+				TargetAttributes = {
+					E5E1C6D11ECA5D04000154E3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = S2QC995M6F;
+						ProvisioningStyle = Automatic;
+					};
+					E5E1C6EB1ECA5D04000154E3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = S2QC995M6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E5E1C6D11ECA5D04000154E3;
+					};
+					E5E1C6F61ECA5D04000154E3 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = S2QC995M6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E5E1C6D11ECA5D04000154E3;
+					};
+				};
+			};
+			buildConfigurationList = E5E1C6CD1ECA5D04000154E3 /* Build configuration list for PBXProject "RobotsVSZombies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5E1C6C91ECA5D04000154E3;
+			productRefGroup = E5E1C6D31ECA5D04000154E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5E1C6D11ECA5D04000154E3 /* RobotsVSZombies */,
+				E5E1C6EB1ECA5D04000154E3 /* RobotsVSZombiesTests */,
+				E5E1C6F61ECA5D04000154E3 /* RobotsVSZombiesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5E1C6D01ECA5D04000154E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E50A3F5F1ECC14850049C73B /* game_win.wav in Resources */,
+				E5A1B92F1ECCAD3900C56E0A /* select_sound.wav in Resources */,
+				E50A3F631ECC1A5A0049C73B /* menu_music.wav in Resources */,
+				E50A3F5A1ECC03570049C73B /* lose_life.wav in Resources */,
+				E5E1C6E11ECA5D04000154E3 /* Main.storyboard in Resources */,
+				E5E1C6D81ECA5D04000154E3 /* GameScene.sks in Resources */,
+				E50A3F521ECBF7860049C73B /* heart_shoot.wav in Resources */,
+				E5E1C6E31ECA5D04000154E3 /* Assets.xcassets in Resources */,
+				E5A1B9311ECCB52700C56E0A /* lose_music.wav in Resources */,
+				E5E1C70C1ECAB61A000154E3 /* StartScene.sks in Resources */,
+				E5E1C6E61ECA5D04000154E3 /* LaunchScreen.storyboard in Resources */,
+				E5E1C70E1ECAB654000154E3 /* LoseScene.sks in Resources */,
+				E50A3F5E1ECC14850049C73B /* battle_music.wav in Resources */,
+				E5E1C7191ECABDBF000154E3 /* Pixeleris.ttf in Resources */,
+				E5E1C7151ECABCB2000154E3 /* UnicaOne-Regular.ttf in Resources */,
+				E50A3F661ECC1C8F0049C73B /* credit_music.wav in Resources */,
+				E5E1C7171ECABD42000154E3 /* Percy Pixel.ttf in Resources */,
+				E5E1C6DA1ECA5D04000154E3 /* Actions.sks in Resources */,
+				E50A3F561ECBFB820049C73B /* CreditScene.sks in Resources */,
+				E5E1C7101ECAB664000154E3 /* WinScene.sks in Resources */,
+				E50A3F541ECBF7AD0049C73B /* explosion_effect.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E1C6EA1ECA5D04000154E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E1C6F51ECA5D04000154E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5E1C6CE1ECA5D04000154E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E1C6DC1ECA5D04000154E3 /* GameScene.swift in Sources */,
+				E5E1C6DE1ECA5D04000154E3 /* GameViewController.swift in Sources */,
+				E5E1C6D61ECA5D04000154E3 /* AppDelegate.swift in Sources */,
+				E5E1C7221ECAC20B000154E3 /* WinScene.swift in Sources */,
+				E5E1C7201ECAC202000154E3 /* StartScene.swift in Sources */,
+				E5E1C71E1ECAC1DB000154E3 /* LoseScene.swift in Sources */,
+				E50A3F581ECBFB910049C73B /* CreditScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E1C6E81ECA5D04000154E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E1C6F11ECA5D04000154E3 /* RobotsVSZombiesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5E1C6F31ECA5D04000154E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5E1C6FC1ECA5D04000154E3 /* RobotsVSZombiesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5E1C6EE1ECA5D04000154E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E1C6D11ECA5D04000154E3 /* RobotsVSZombies */;
+			targetProxy = E5E1C6ED1ECA5D04000154E3 /* PBXContainerItemProxy */;
+		};
+		E5E1C6F91ECA5D04000154E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5E1C6D11ECA5D04000154E3 /* RobotsVSZombies */;
+			targetProxy = E5E1C6F81ECA5D04000154E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5E1C6DF1ECA5D04000154E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E1C6E01ECA5D04000154E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5E1C6E41ECA5D04000154E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5E1C6E51ECA5D04000154E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5E1C6FE1ECA5D04000154E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E5E1C6FF1ECA5D04000154E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5E1C7011ECA5D04000154E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S2QC995M6F;
+				INFOPLIST_FILE = RobotsVSZombies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tz920223.RobotsVSZombies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5E1C7021ECA5D04000154E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S2QC995M6F;
+				INFOPLIST_FILE = RobotsVSZombies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tz920223.RobotsVSZombies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E5E1C7041ECA5D04000154E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S2QC995M6F;
+				INFOPLIST_FILE = RobotsVSZombiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tz920223.RobotsVSZombiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotsVSZombies.app/RobotsVSZombies";
+			};
+			name = Debug;
+		};
+		E5E1C7051ECA5D04000154E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S2QC995M6F;
+				INFOPLIST_FILE = RobotsVSZombiesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tz920223.RobotsVSZombiesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobotsVSZombies.app/RobotsVSZombies";
+			};
+			name = Release;
+		};
+		E5E1C7071ECA5D04000154E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S2QC995M6F;
+				INFOPLIST_FILE = RobotsVSZombiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tz920223.RobotsVSZombiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RobotsVSZombies;
+			};
+			name = Debug;
+		};
+		E5E1C7081ECA5D04000154E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S2QC995M6F;
+				INFOPLIST_FILE = RobotsVSZombiesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tz920223.RobotsVSZombiesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RobotsVSZombies;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5E1C6CD1ECA5D04000154E3 /* Build configuration list for PBXProject "RobotsVSZombies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E1C6FE1ECA5D04000154E3 /* Debug */,
+				E5E1C6FF1ECA5D04000154E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E1C7001ECA5D04000154E3 /* Build configuration list for PBXNativeTarget "RobotsVSZombies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E1C7011ECA5D04000154E3 /* Debug */,
+				E5E1C7021ECA5D04000154E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E1C7031ECA5D04000154E3 /* Build configuration list for PBXNativeTarget "RobotsVSZombiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E1C7041ECA5D04000154E3 /* Debug */,
+				E5E1C7051ECA5D04000154E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E1C7061ECA5D04000154E3 /* Build configuration list for PBXNativeTarget "RobotsVSZombiesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E1C7071ECA5D04000154E3 /* Debug */,
+				E5E1C7081ECA5D04000154E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5E1C6CA1ECA5D04000154E3 /* Project object */;
+}
