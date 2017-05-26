@@ -10,6 +10,6 @@ Repository for iOS game: RobotsVSZombies
 ![](http://zhangtong.weebly.com/uploads/1/0/5/7/105780875/winscreen_orig.png =208x370)
 ![](http://zhangtong.weebly.com/uploads/1/0/5/7/105780875/losescreen_orig.png =208x370)
 
-Find more about it at my 
-[portfolio] (http://zhangtong.weebly.com/robots-vs-zombies.html) 
+Find more about it at my [portfolio]
 
+[portfolio]: http://zhangtong.weebly.com/robots-vs-zombies.html
