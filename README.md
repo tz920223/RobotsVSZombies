@@ -5,7 +5,7 @@ Repository for iOS game: RobotsVSZombies
 
 ##### Robots vs. Zombies is an iOS shooting game where you fight against zombie-robots as a robot. It is set in a future world in which humans no longer live on the planet.
 
-<img src="http://zhangtong.weebly.com/uploads/1/0/5/7/105780875/firstscreen_orig.png" height="250">
+<img src="http://zhangtong.weebly.com/uploads/1/0/5/7/105780875/firstscreen_orig.png" height="300">
 
 ![](http://zhangtong.weebly.com/uploads/1/0/5/7/105780875/firstscreen_orig.png){:height="208px" width="370px"}
 ![](http://zhangtong.weebly.com/uploads/1/0/5/7/105780875/gamescreen_orig.png =208x370)
